@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/src/linux-headers-6.8.0-1014-oracle/**/include",
+                "/usr/src/linux-headers-6.8.0-1014-oracle/**/include/generated",
+                "/usr/src/linux-headers-6.8.0-1014-oracle/**/include/uapi",
+                "/usr/src/linux-headers-6.8.0-1014-oracle/**/include/generated/uapi"
+            ],
+            "compilerArgs": [
+            "-nostdinc",
+            "-include", "/usr/src/linux-headers-6.8.0-1014-oracle/include/linux/kconfig.h",
+            "-include", "/usr/src/linux-headers-6.8.0-1014-oracle/include/linux/compiler_types.h"
+            ],
+            "defines": [
+                "__KERNEL__",
+                "MODULE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-arm64"
+        }
+    ],
+    "version": 4
+}
