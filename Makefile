@@ -1,5 +1,5 @@
 .PHONY: all
 all:
-	cd driver && make
-	cd client && make
+	cd driver && make clean && make
+	cd client && make clean && make
 
