@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Compile
-      run: cd driver && make
+      run: cd driver && make clean && make
 
     - name: Install
       run: sudo insmod driver/build/opentpu.ko
